@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Long Kriya & Satsang</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:#17324d;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial}
+header{background:linear-gradient(135deg,#17324d,#2d6d88);color:#fff;padding:30px 18px 34px;border-radius:0 0 26px 26px}.wrap{max-width:980px;margin:auto}
+h1{margin:0;font-size:28px;letter-spacing:-.4px}.tag{margin-top:7px;font-size:14px;opacity:.85}
+main{max-width:980px;margin:0 auto;padding:22px 18px 45px}.intro{text-align:center;margin:4px 0 25px}.intro h2{margin:0;font-size:21px}.intro p{margin:6px 0;color:#71808c;font-size:13px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px}.tab{background:#fff;border:1px solid #dfe7eb;border-radius:16px;padding:18px;text-align:left;cursor:pointer;box-shadow:0 3px 12px #17324d0a}.tab:hover{transform:translateY(-1px)}
+.tab b{display:block;font-size:17px}.tab span{display:block;color:#71808c;font-size:12px;margin-top:5px}.tab.lk b{color:#2c718f}.tab.sat b{color:#52785b}
+h3{font-size:17px;margin:0 0 11px}.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.area{background:#fff;border:1px solid #dfe7eb;border-radius:15px;padding:17px;cursor:pointer;min-height:76px}.area:hover{box-shadow:0 5px 16px #17324d12}.area b{font-size:14px}.count{font-size:12px;color:#71808c;margin-top:6px}
+.detail{display:none}.back{border:0;background:none;color:#2c718f;font-weight:800;padding:0;margin:2px 0 15px;cursor:pointer;font-size:14px}
+.heading{background:#fff;border:1px solid #dfe7eb;border-radius:16px;padding:17px;margin-bottom:12px}.heading b{font-size:19px}.heading span{display:block;color:#71808c;font-size:12px;margin-top:5px}
+.filter{display:flex;gap:8px;margin-bottom:12px}input,select{width:100%;padding:11px 12px;border:1px solid #d5e0e5;border-radius:10px;background:#fff;color:#17324d;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.card{background:#fff;border:1px solid #dfe7eb;border-radius:15px;padding:16px}.badge{display:inline-block;padding:5px 8px;border-radius:20px;font-size:10px;font-weight:850;background:#eef5f7;color:#2c718f}.badge.s{background:#edf5ee;color:#52785b}.card h4{font-size:16px;margin:8px 0 5px}.venue{font-weight:700;font-size:13px}.local{font-size:12px;color:#2c718f;font-weight:700;margin:4px 0 12px}.line{font-size:12px;color:#526574;margin:6px 0;line-height:1.45}.actions{display:flex;gap:7px;border-top:1px solid #e5eaed;padding-top:11px;margin-top:12px}.actions a{border:1px solid #d5e0e5;border-radius:9px;padding:8px 10px;text-decoration:none;color:#17324d;font-size:11px;font-weight:800}.actions .map{color:#2c718f;background:#eef5f7}
+.empty{background:#fff;border:1px solid #dfe7eb;border-radius:14px;padding:35px;text-align:center;color:#71808c}
+@media(max-width:650px){.areas,.cards{grid-template-columns:1fr 1fr}.tab{padding:15px}}@media(max-width:440px){.areas,.cards{grid-template-columns:1fr}.tabs{gap:8px}.tab b{font-size:15px}h1{font-size:24px}}
+.note{margin-top:9px;padding:9px 10px;border-radius:9px;background:#f7fafb;color:#687986;font-size:11px;line-height:1.4}.actions{display:flex;flex-wrap:wrap;gap:7px}.actions a{white-space:nowrap}
+.contactline{margin:7px 0 8px;color:#40566a;font-size:12px;line-height:1.35;min-height:17px}
+.card h4{min-height:20px;margin-bottom:3px}
+.card .venue{display:none}
+.card .local{min-height:17px;margin-bottom:4px}
+
+header{background:#fff;color:#17324d;padding:0;border-radius:0 0 26px 26px;overflow:hidden;box-shadow:0 2px 10px rgba(23,50,77,.08)}
+.logo-panel{height:92px;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:1px solid #e5eaed;padding:10px 18px}
+.logo-panel img{display:block;width:190px;max-width:58vw;height:auto;max-height:68px;object-fit:contain}
+.logo-panel #logoFallback{align-items:center;gap:8px;color:#17324d;font-weight:800;letter-spacing:.7px;font-size:15px}
+.sunmark{font-size:34px;line-height:1;color:#f2b544}
+.title-panel{background:linear-gradient(135deg,#17324d,#2d6d88);color:#fff;padding:24px 18px 28px;text-align:center}
+.title-panel .wrap{max-width:1050px;margin:auto}
+.title-panel h1{margin:0;font-size:34px;line-height:1.18;letter-spacing:-.5px;font-weight:800}
+.title-panel .tag{margin-top:8px;font-size:14px;opacity:.9}
+@media(max-width:650px){
+  .logo-panel{height:82px}
+  .logo-panel img{width:165px;max-height:60px}
+  .title-panel{padding:20px 16px 23px}
+  .title-panel h1{font-size:27px;line-height:1.2}
+  .title-panel .tag{font-size:13px}
+}
+@media(max-width:440px){
+  .logo-panel{height:76px}
+  .logo-panel img{width:150px;max-height:54px}
+  .title-panel h1{font-size:24px}
+}
+
+/* Blue palette refresh */
+body{background:#f4f8fb;color:#17324d}
+.area-grid{gap:14px}
+.area{
+  background:linear-gradient(135deg,#eaf4fb,#f6fbfe);
+  border:1px solid #cfe3ef;
+  color:#174a68;
+  box-shadow:0 3px 10px rgba(33,91,125,.07);
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.area:nth-child(3n+2){background:linear-gradient(135deg,#eef6f2,#f8fcfa);border-color:#d4e8df;color:#245b50}
+.area:nth-child(3n+3){background:linear-gradient(135deg,#f2effb,#faf8fd);border-color:#ddd6ef;color:#554779}
+.area:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(33,91,125,.12);
+}
+.area .count{color:#6b8290}
+.area:nth-child(3n+2) .count{color:#718b84}
+.area:nth-child(3n+3) .count{color:#80769a}
+
+/* Keep the main action buttons in the blue family */
+.hero-card,.feature-card{border-color:#cfe3ef}
+button,.btn{background:#246b8f}
+button:hover,.btn:hover{background:#1c5877}
+
+.area[data-area="Online"]{
+  background:linear-gradient(135deg,#e5f1fb,#f2f8fd);
+  border:2px solid #8dbbd5;
+  color:#155b7c;
+}
+
+/* Center-align the main Long Kriya and Satsang boxes */
+.hero-grid,.feature-grid,.type-grid{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:stretch !important;
+  gap:16px;
+}
+.hero-grid > *, .feature-grid > *, .type-grid > *{
+  text-align:center !important;
+}
+
+/* Ensure the Long Kriya and Satsang labels themselves are centered */
+.hero-grid > *, .feature-grid > *, .type-grid > *{
+  text-align:center !important;
+}
+.hero-grid > * h2, .hero-grid > * h3,
+.feature-grid > * h2, .feature-grid > * h3,
+.type-grid > * h2, .type-grid > * h3{
+  text-align:center !important;
+  width:100%;
+}
+
+.actions .whatsapp{
+  background:#e8f7ee;
+  color:#167345;
+  border:1px solid #bfe4cd;
+}
+.actions .whatsapp:hover{
+  background:#d9f0e2;
+}
+</style></head>
+<body>
+<header>
+  <div class="logo-panel">
+    <img src="https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/wysiwyg_imageupload/aolf_logo_1.png?itok=II6rUsDd"
+         alt="The Art of Living logo"
+         onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block';">
+    <div id="logoFallback" style="display:none;">
+      <span class="sunmark">☀</span>
+      <span class="logotext">THE ART OF LIVING</span>
+    </div>
+  </div>
+  <div class="title-panel">
+    <div class="wrap">
+      <h1>Long Kriya &amp; Satsang centres - Jogeshwari to Virar</h1>
+      
+    </div>
+  </div>
+</header>
+<main>
+<section id="home">
+<div class="intro"><h2>Explore Follow-up Centres</h2><p>Choose Long Kriya or Satsang, then select an area.</p></div>
+<div class="tabs">
+<div class="tab lk" onclick="openType('Long Kriya')">🧘 <b>Long Kriya</b><span>Explore Long Kriya centres →</span></div>
+<div class="tab sat" onclick="openType('Satsang')">🙏 <b>Satsang</b><span>Explore Satsang centres →</span></div>
+</div>
+<h3>Explore by Area</h3>
+<div class="areas" id="homeAreas"></div>
+</section>
+
+<section id="detail" class="detail">
+<button class="back" onclick="goHome()">← Back to Dashboard</button>
+<div class="heading"><b id="title"></b><span id="subtitle"></span></div>
+<div class="filter"><input id="q" placeholder="Search centre or locality…" oninput="render()"><select id="type" onchange="render()"><option>All</option><option>Long Kriya</option><option>Satsang</option></select></div>
+<div id="cards" class="cards"></div>
+</section>
+</main>
+<footer style="text-align:center;color:#8795a1;font-size:11px;padding:0 18px 25px">Source: supplied WhatsApp export • 600 lines • Distinct sessions retained where the source gives different timings.</footer>
+<script>
+const DATA=[{"type": "Long Kriya", "day": "Saturday", "time": "7:15 AM – 9:00 AM", "venue": "White City / Lokhandwala Township", "area": "Kandivali East", "locality": "Kandivali East", "address": "White City, Lokhandwala Township, Kandivali East, Mumbai 400101", "phone": "9619653449", "note": "", "maps": "", "join": "", "contact": "Jayashree – 9619653449"}, {"type": "Long Kriya", "day": "Saturday", "time": "7:30 AM – 9:00 AM", "venue": "Vaishya Samaj Kalyan Kendra Hall", "area": "Borivali East", "locality": "Borivali East", "address": "1st floor, near Maruti Sai Service Centre, Ekta Bhoomi Garden 3, Electric Industries Road, Borivali East", "phone": "8450956614", "note": "", "maps": "", "join": "", "contact": "84509 56614"}, {"type": "Long Kriya", "day": "Saturday", "time": "4:30 PM – 6:00 PM", "venue": "S D Malviya and Co", "area": "Vasai East", "locality": "Vasai East", "address": "211, Ambika Complex, Navghar, Vasai East 401210", "phone": "9321694070", "note": "Satsang: same venue occasionally.", "maps": "", "join": "", "contact": "Shivendra D Malviya – 9321694070"}, {"type": "Long Kriya", "day": "Saturday", "time": "4:30 PM – 6:00 PM", "venue": "Sarthak Bungalow", "area": "Virar West", "locality": "Virar West", "address": "House No. 334, Sarthak Bungalow, Khawane Ali, Ram Mandir Road, Bolinj, Virar West", "phone": "8788162213", "note": "", "maps": "", "join": "", "contact": "Rupali Naik – 8788162213"}, {"type": "Long Kriya", "day": "Saturday", "time": "5:30 PM", "venue": "Anand Garden", "area": "Dahisar West", "locality": "Dahisar West", "address": "D501 Anand Garden, Kanderpada, Dahisar West", "phone": "9819339413", "note": "", "maps": "", "join": "", "contact": "Nandkumar – 9819339413"}, {"type": "Long Kriya", "day": "Saturday", "time": "5:30 PM – 7:00 PM", "venue": "Oberoi Esquire", "area": "Goregaon East", "locality": "Goregaon East", "address": "Oberoi Esquire, Goregaon East", "phone": "9619547334", "note": "", "maps": "", "join": "", "contact": "Prashant – 9619547334"}, {"type": "Long Kriya", "day": "Saturday", "time": "5:30 PM", "venue": "Sachinji", "area": "Kandivali West", "locality": "Kandivali West", "address": "B-202, West View CHSL, next to Silver Presidency, Sector 2, Charkop, Kandivali West", "phone": "9987569445", "note": "", "maps": "", "join": "", "contact": "9987569445"}, {"type": "Long Kriya", "day": "Saturday", "time": "6:30 PM", "venue": "Om Vrindavan Society", "area": "Dahisar East", "locality": "Dahisar East", "address": "103 Om Vrindavan Society, New Link Road, Dahisar East", "phone": "8080809162", "note": "", "maps": "", "join": "", "contact": "Manasi – 9029084166 / Mahesh – 9022228122 / Taruna – 8080809162"}, {"type": "Satsang", "day": "Saturday", "time": "7:00 PM – 8:00 PM", "venue": "Hanuman Mandir", "area": "Vasai West", "locality": "Vasai West", "address": "2nd floor, Hanuman Mandir, Station Road, Vasai West", "phone": "9930184064", "note": "", "maps": "", "join": "", "contact": "Chitra Menon – 9930184064"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM", "venue": "Angel Smruti", "area": "Vasai West", "locality": "Vasai West", "address": "603, Angel Smruti, Papdy, Vasai Gaon", "phone": "9322992910", "note": "Source also lists online follow-ups Saturday 9:00 AM and Sunday 7:40 AM; alternative teams/weekends.", "maps": "", "join": "", "contact": "Dimple Rajani – 9892014151 / Sujata Kulkarni – 9823522490 / Dilip Derasari – 9322992910"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM – 8:30 AM", "venue": "Astha Hospital", "area": "Kandivali West", "locality": "Kandivali West", "address": "4th floor, Astha Hospital, SV Road, opposite Fire Brigade, Balasinor Society, Parekh Nagar, Kandivali West", "phone": "", "note": "", "maps": "", "join": "", "contact": "Astha Hospital"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM", "venue": "B.V.A. Hall", "area": "Nalasopara West", "locality": "Nalasopara West", "address": "2nd floor, B.V.A. Hall, Nalasopara–Virar Link Road, Sriprasta 4th Road, Nalasopara West", "phone": "8149777033", "note": "No Satsang happening as of the source.", "maps": "", "join": "", "contact": "Raavee Pujari – 8446012111 / Pushkarraj Pujari – 8446015222 / Yashwanti Kundra – 9222332408 / Shyamala Shetty – 8149777033"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM", "venue": "Glassia", "area": "Dahisar West", "locality": "Dahisar West", "address": "1402, Glassia, near RTO, Kanderpada, Dahisar West", "phone": "9321902337", "note": "", "maps": "", "join": "", "contact": "Korigeri – 9892167853 / Sadhana – 9321902337"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM – 8:45 AM", "venue": "Hanuman Mandir", "area": "Vasai West", "locality": "Vasai West", "address": "2nd floor, Hanuman Mandir, Station Road, Vasai West", "phone": "9820606604", "note": "", "maps": "", "join": "", "contact": "Ratish Menon – 9820606604"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM", "venue": "Jayshreeji", "area": "Kandivali West", "locality": "Kandivali West", "address": "1st floor, Adharika Bhavan, near Pawandham, Pizza Hut Lane, Mahavir Nagar, Kandivali West", "phone": "9821160533", "note": "", "maps": "", "join": "", "contact": "9821160533"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM – 8:30 AM", "venue": "Joshi Hall", "area": "Vasai East", "locality": "Vasai East", "address": "Shubhlaxmi Shopping Center, near Vasant Nagari Ground, Vasai East", "phone": "9324607173", "note": "Satsang same venue or floating on special occasions.", "maps": "", "join": "", "contact": "Sujata Kulkarni – 9823522490 / Durgesh Saqcena – 9324607173"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:00 AM – 8:30 AM", "venue": "Vasant Valley Club House", "area": "Malad East", "locality": "Malad East", "address": "Vasant Valley, Malad East", "phone": "7977044452", "note": "", "maps": "", "join": "", "contact": "Nidhi Gupta – 7977044452"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:15 AM – 9:00 AM", "venue": "Reena Mehta College", "area": "Bhayandar West", "locality": "Bhayandar West", "address": "150 Feet Road, Bhayandar West", "phone": "9833055014", "note": "", "maps": "", "join": "", "contact": "Devendra – 9819689960 / Sunita – 9323493927 / Dr Sunil – 9833055014"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM", "venue": "Dahisar Sports Foundation", "area": "Dahisar East", "locality": "Dahisar East", "address": "Near Anand Nagar, Dahisar East", "phone": "9819442986", "note": "", "maps": "", "join": "", "contact": "Harini Shetty – 9819442986"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM – 9:30 AM", "venue": "Muljibhai Mehta International School", "area": "Virar West", "locality": "Virar West", "address": "Gokul Township, Virar West", "phone": "9323257962", "note": "", "maps": "", "join": "", "contact": "Mandar Manohar Amonkar – 9323257962"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM", "venue": "Online Follow-up", "area": "Online", "locality": "Other / Unspecified", "address": "Online", "phone": "9920017918", "note": "", "maps": "", "join": "", "contact": "Ajinkyaji – 9920017918"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM – 9:30 AM", "venue": "Prakash Anand Bhavan", "area": "Malad West", "locality": "Malad West", "address": "Near Somwari Bazaar, opposite Jhanvi Nursing Home, Malad West", "phone": "98336255059819946371998745367398929672709322252248", "note": "Source post dated 20 Sept 2026.", "maps": "", "join": "", "contact": "9833625505 / 9819946371 / 9987453673 / 9892967270 / 9322252248"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM", "venue": "Seeba House", "area": "Goregaon West", "locality": "Goregaon West", "address": "Seeba House, Bungalow No. 12/47, Yashwant Nagar, Goregaon West", "phone": "9870001177", "note": "Separate source entry; retained because the source gives a different time from the 9:15 AM session.", "maps": "", "join": "", "contact": "Badri Uncle – 9870001177"}, {"type": "Long Kriya", "day": "Every Sunday", "time": "7:30 AM", "venue": "Surbhi Banquet Hall", "area": "Kandivali East", "locality": "Kandivali East", "address": "90 ft Road, Thakur Complex, Kandivali East", "phone": "9869470919", "note": "", "maps": "", "join": "", "contact": "Sandeep – 9820323499 / Sudhakar – 9869470919"}, {"type": "Long Kriya", "day": "Sunday", "time": "7:30 AM – 9:00 AM", "venue": "Yoga Topics", "area": "Kandivali West", "locality": "Kandivali West", "address": "301, Ganesh Tower, near Datt Mandir / Parijat Society, Dahanukar Wadi, Kandivali West", "phone": "8750000360", "note": "", "maps": "", "join": "", "contact": "Monica Dhingra / Dinesh Nulmutt – 8750000360"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:00 AM – 9:30 AM", "venue": "New Horizon Pre School", "area": "Mira Road", "locality": "Mira Road", "address": "1st floor, Nine Galaxy Apartment, Ramdev Park, Mira Road", "phone": "913638284698206452499867520529", "note": "", "maps": "https://maps.app.goo.gl/eX315AJ5QLWaEpnW7", "join": "", "contact": "9136382846 / 9820645249 / 9867520529"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:00 AM – 9:45 AM", "venue": "SSRVM Borivali East", "area": "Borivali East", "locality": "Borivali East", "address": "SSRVM Borivali East", "phone": "8369449905", "note": "", "maps": "", "join": "", "contact": "Jayesh Panchal – 8369449905"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM – 10:00 AM", "venue": "36B Bungalow, Royal Hills Society", "area": "Goregaon East", "locality": "Goregaon East", "address": "New Mhada, near IT Park, Goregaon East", "phone": "7738760158", "note": "", "maps": "", "join": "", "contact": "Dipali – 9930730957 / Gahana – 7738760158"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM – 10:00 AM", "venue": "Lotus Fitness Studio", "area": "Kandivali West", "locality": "Kandivali West", "address": "1st floor, Parijat Society, opposite Pataria Hospital, Dahanukar Wadi, Kandivali West", "phone": "9819836922", "note": "", "maps": "", "join": "", "contact": "Neel / Disha / Dhara – 9819836922"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM – 10:00 AM", "venue": "Mumbai Public School", "area": "Kandivali West", "locality": "Kandivali West", "address": "Iraniwadi Road No. 3, Kandivali West, near Ramdev Peer Temple", "phone": "8879006652", "note": "", "maps": "", "join": "", "contact": "Kiran Shah / Mehul Kaku – 8879006652"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM – 9:30 AM", "venue": "Online Follow-up", "area": "Online", "locality": "Virar West", "address": "Online", "phone": "8805456742", "note": "", "maps": "", "join": "https://meet.google.com/smk-fofb-gdz", "contact": "Jashmin Khatri – 8805456742"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM", "venue": "Online Follow-up", "area": "Online", "locality": "Other / Unspecified", "address": "Online", "phone": "9892784784", "note": "", "maps": "", "join": "", "contact": "9892784784"}, {"type": "Long Kriya", "day": "Sunday", "time": "8:30 AM – 10:00 AM", "venue": "The Vibe Studio", "area": "Malad East", "locality": "Malad East", "address": "Sunrise Tower CHSL, Malad East", "phone": "9820943504", "note": "", "maps": "", "join": "", "contact": "Komal – 9820272190 / Vipul – 9820943504"}, {"type": "Long Kriya", "day": "Sunday", "time": "9:00 AM", "venue": "Kidzee School", "area": "Mira Road", "locality": "Mira Road", "address": "Near Lodha Aqua, Mira Road", "phone": "9892033080", "note": "", "maps": "", "join": "", "contact": "9892033080"}, {"type": "Long Kriya", "day": "Sunday", "time": "9:15 AM – 10:45 AM", "venue": "Seeba House", "area": "Goregaon West", "locality": "Goregaon West", "address": "Seeba House, Bungalow No. 12/47, Yashwant Nagar, Goregaon West", "phone": "", "note": "", "maps": "bit.ly/Seebahouse", "join": "", "contact": "Seeba House"}, {"type": "Long Kriya", "day": "Sunday", "time": "9:30 AM", "venue": "Yoga365", "area": "Borivali West", "locality": "Borivali West", "address": "1st floor, Plot No. 368, beside Muthoot Finance, Prashanti Bungalows, Gorai 2, Borivali West", "phone": "8082601211", "note": "", "maps": "", "join": "", "contact": "Neha Mirajkar – 8082601211"}, {"type": "Satsang", "day": "Sunday", "time": "5:00 PM", "venue": "A-504, Nirvana Residency", "area": "Other / Unspecified", "locality": "Other / Unspecified", "address": "A-504, Nirvana Residency", "phone": "7977912282", "note": "", "maps": "", "join": "", "contact": "Dr. Simran – 7977912282"}, {"type": "Long Kriya", "day": "Sunday", "time": "5:00 PM", "venue": "Prabhu Ali / Krishna Kunja", "area": "Vasai West", "locality": "Vasai West", "address": "Behind Municipal Garden, Vasai Gaon West", "phone": "7620929514", "note": "", "maps": "", "join": "", "contact": "Sunita Salgaonkar – 7620929514"}, {"type": "Long Kriya", "day": "Sunday", "time": "6:00 PM", "venue": "A-504, Nirvana Residency", "area": "Other / Unspecified", "locality": "Other / Unspecified", "address": "A-504, Nirvana Residency", "phone": "7977912282", "note": "", "maps": "", "join": "", "contact": "Dr. Simran – 7977912282"}, {"type": "Long Kriya", "day": "Friday / Sunday", "time": "Friday 7:30 PM; Sunday 7:45 AM", "venue": "JBCN School", "area": "Dahisar West", "locality": "Dahisar West", "address": "JBCN School, Dahisar West", "phone": "9833789830", "note": "", "maps": "", "join": "", "contact": "Janhavi – 9967045050 / Roopali – 9930682160 / Prabha – 9833789830"}, {"type": "Long Kriya", "day": "Monday", "time": "3:30 PM", "venue": "Rawalpada", "area": "Dahisar East", "locality": "Dahisar East", "address": "Rawalpada, Dahisar East, Mumbai 400068", "phone": "9820690057", "note": "", "maps": "", "join": "", "contact": "Priti Mundra – 9820690057"}, {"type": "Long Kriya", "day": "Monday", "time": "4:30 PM", "venue": "Saibaba Temple", "area": "Virar West", "locality": "Virar West", "address": "Station Road, Virar West", "phone": "9867195849", "note": "", "maps": "", "join": "", "contact": "Meera Ulhas Bandekar – 9867195849"}, {"type": "Long Kriya", "day": "Monday", "time": "7:00 PM – 8:45 PM", "venue": "Samaj Mandir Hall", "area": "Vasai West", "locality": "Vasai West", "address": "1st floor, Samaj Mandir Hall, Vishal Nagar, Ambadi Road, Vasai West", "phone": "7021027221", "note": "", "maps": "", "join": "", "contact": "Chitra Menon – 9930184064 / Shobharani Velamala – 7021027221"}, {"type": "Satsang", "day": "2nd Monday of every month", "time": "7:30 PM", "venue": "Surbhi Banquet Hall", "area": "Kandivali East", "locality": "Kandivali East", "address": "90 ft Road, Thakur Complex, Kandivali East", "phone": "9869470919", "note": "", "maps": "", "join": "", "contact": "Sandeep – 9820323499 / Sudhakar – 9869470919"}, {"type": "Satsang", "day": "Tuesday", "time": "7:30 PM", "venue": "JBCN School", "area": "Dahisar West", "locality": "Dahisar West", "address": "JBCN School, Dahisar West", "phone": "9833789830", "note": "", "maps": "", "join": "", "contact": "Janhavi – 9967045050 / Roopali – 9930682160 / Prabha – 9833789830"}, {"type": "Satsang", "day": "Tuesday", "time": "7:30 PM", "venue": "SSRVM Borivali West", "area": "Borivali West", "locality": "Borivali West", "address": "SSRVM Borivali West", "phone": "9920017918", "note": "Source lists Ajinkyaji's Sunday online Long Kriya separately.", "maps": "", "join": "", "contact": "Ajinkyaji – 9920017918"}, {"type": "Long Kriya", "day": "Wednesday", "time": "6:30 PM – 8:00 PM", "venue": "Krishna Township Samaj Mandir Hall", "area": "Vasai East", "locality": "Vasai East", "address": "Krishna Township Samaj Mandir Hall, Vasai East", "phone": "8793204168", "note": "Daily Group Sadhana also mentioned; Satsang same venue occasionally.", "maps": "", "join": "", "contact": "Narmada S Junjuru – 8793204168"}, {"type": "Satsang", "day": "Wednesday", "time": "8:30 PM", "venue": "Goverdhan Nagar", "area": "Kandivali West", "locality": "Kandivali West", "address": "7th floor, J Wing, Goverdhan Nagar, opposite Poinsur Gymkhana, near Raghuleela Mall, Kandivali West", "phone": "8879006652", "note": "", "maps": "", "join": "", "contact": "Kiran Shah / Mehul Kaku – 8879006652"}, {"type": "Satsang", "day": "Thursday", "time": "6:30 PM", "venue": "G.E. Links Hsg Co Society", "area": "Other / Unspecified", "locality": "Other / Unspecified", "address": "G.E. Links Hsg Co Society", "phone": "", "note": "Rotating Satsang.", "maps": "", "join": "", "contact": "G.E. Links Hsg Co Society"}, {"type": "Satsang", "day": "Every Thursday", "time": "7:30 PM", "venue": "Dahisar Sports Foundation", "area": "Dahisar East", "locality": "Dahisar East", "address": "Anand Nagar, Dahisar East", "phone": "9819442986", "note": "", "maps": "", "join": "", "contact": "Harini Shetty – 9819442986"}, {"type": "Satsang", "day": "Every Thursday", "time": "7:30 PM – 8:30 PM", "venue": "Krishna Residency", "area": "Virar West", "locality": "Virar West", "address": "C/702, Krishna Residency, Viva Vrindavan Township, near New Viva College Road, Virar West", "phone": "8805456742", "note": "", "maps": "", "join": "", "contact": "Jashmin Khatri – 8805456742"}, {"type": "Satsang", "day": "Every Thursday", "time": "7:30 PM – 9:00 PM", "venue": "Seeba House", "area": "Goregaon West", "locality": "Goregaon West", "address": "Seeba House, Bungalow No. 12/47, Yashwant Nagar, Goregaon West", "phone": "", "note": "", "maps": "", "join": "", "contact": "Seeba House"}, {"type": "Long Kriya", "day": "Friday", "time": "6:00 AM – 7:15 AM", "venue": "Sumukh Hills", "area": "Kandivali East", "locality": "Kandivali East", "address": "C-2003, Sumukh Hills, Western Express Highway, Kandivali East", "phone": "9167703123", "note": "", "maps": "", "join": "", "contact": "Jaya Kandade – 9167703123"}, {"type": "Satsang", "day": "Friday", "time": "7:00 PM – 8:00 PM", "venue": "Sumukh Hills", "area": "Kandivali East", "locality": "Kandivali East", "address": "C-2003, Sumukh Hills, Western Express Highway, Kandivali East", "phone": "9167703123", "note": "", "maps": "", "join": "", "contact": "Jaya Kandade – 9167703123"}, {"type": "Long Kriya", "day": "Not specified", "time": "7:00 AM – 9:00 AM", "venue": "Greens Club House", "area": "Borivali West", "locality": "Borivali West", "address": "Raheja, Kulupwadi, Borivali, Mumbai 400066", "phone": "9820345967", "note": "", "maps": "", "join": "", "contact": "9820345967"}, {"type": "Satsang", "day": "Every Full Moon", "time": "6:30 PM", "venue": "Lokhandwala Township", "area": "Kandivali East", "locality": "Kandivali East", "address": "Lokhandwala Township, Kandivali East, Mumbai 400101", "phone": "9619657449", "note": "", "maps": "", "join": "", "contact": "Rajesh Menon – 9619657449"}, {"type": "Satsang", "day": "Every Full Moon", "time": "7:30 PM", "venue": "Kidzee School", "area": "Mira Road", "locality": "Mira Road", "address": "Near Lodha Aqua, Mira Road", "phone": "9892033080", "note": "", "maps": "", "join": "", "contact": "9892033080"}, {"type": "Satsang", "day": "Every Ekadashi", "time": "7:30 PM – 9:00 PM", "venue": "New Horizon Pre School", "area": "Mira Road", "locality": "Mira Road", "address": "1st floor, Nine Galaxy Apartment, Ramdev Park, Mira Road", "phone": "9136382846982064524998675205299892216500", "note": "", "maps": "", "join": "", "contact": "9136382846 / 9820645249 / 9867520529 / 9892216500"}, {"type": "Satsang", "day": "Every Full Moon (Purnima)", "time": "7:30 PM – 9:00 PM", "venue": "Oberoi Esquire", "area": "Goregaon East", "locality": "Goregaon East", "address": "Oberoi Esquire, Goregaon East", "phone": "9820943504", "note": "", "maps": "", "join": "", "contact": "Komal – 9820272190 / Vipul – 9820943504"}, {"type": "Long Kriya", "day": "Not specified in source", "time": "Not specified in source", "venue": "Horizon Pre School", "area": "Mira Road", "locality": "Mira Road", "address": "Row House No. 3, Green Villa CHS Ltd., near Balaji Grand Hotel, Mira Road", "phone": "913638284698206452499867520529", "note": "", "maps": "https://maps.app.goo.gl/GHGj5MbFMxyZBzdQA", "join": "", "contact": "9136382846 / 9820645249 / 9867520529"}];
+let selectedArea='', selectedType='All';
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function map(a){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(a)}
+function areaCards(){
+  let areas=[...new Set(DATA.map(x=>x.area))];
+  const special=["Other / Unspecified","Online"];
+  const normal=areas.filter(a=>!special.includes(a)).sort((a,b)=>String(a).localeCompare(String(b)));
+  areas=normal.concat(special.filter(a=>areas.includes(a)));
+  document.getElementById('homeAreas').innerHTML=areas.map(a=>{
+    let n=DATA.filter(x=>x.area===a).length;
+    return `<div class="area" data-area="${esc(a)}"><b>${esc(a)}</b><div class="count">${n} centre listing${n===1?'':'s'} →</div></div>`
+  }).join('');
+  document.querySelectorAll('.area').forEach(el=>el.addEventListener('click',()=>openArea(el.dataset.area)));
+}
+function openArea(a){selectedArea=a;selectedType='All';openDetail(a,'All Long Kriya & Satsang centres in this area')}
+function openType(t){selectedArea='';selectedType=t;openDetail(t,'All areas • filter and search centres')}
+function openDetail(title,sub){
+  document.getElementById('home').style.display='none';
+  document.getElementById('detail').style.display='block';
+  document.getElementById('title').textContent=title;
+  document.getElementById('subtitle').textContent=sub;
+  document.getElementById('type').value=selectedType;
+  document.getElementById('q').value='';
+  render();
+  scrollTo(0,0);
+}
+function render(){
+  let q=document.getElementById('q').value.toLowerCase(),t=document.getElementById('type').value;
+  let rows=DATA.filter(x=>
+    (!selectedArea||x.area===selectedArea)&&
+    (t==='All'||x.type===t)&&
+    (!q||[x.name,x.venue,x.area,x.locality,x.address,x.day,x.time,x.note].join(' ').toLowerCase().includes(q))
+  );
+  document.getElementById('cards').innerHTML=rows.length?rows.map(x=>{
+    let contact = x.phone ? `<a href="tel:${esc(x.phone)}">📞 Contact</a>` : '';
+    let whatsapp = x.phone ? `<a class="whatsapp" target="_blank" rel="noopener" href="https://wa.me/${esc(x.phone.replace(/\\D/g,''))}">💬 WhatsApp</a>` : '';
+    let mapUrl = x.maps || map(x.address);
+    let online = x.join ? `<a class="map" target="_blank" href="${esc(x.join)}">🔗 Join Online</a>` : '';
+    let note = x.note ? `<div class="note">ℹ️ ${esc(x.note)}</div>` : '';
+    return `<article class="card">
+      <span class="badge ${x.type==='Satsang'?'s':''}">${esc(x.type.toUpperCase())}</span>
+      <h4>${esc(x.venue)}</h4>
+      <div class="local">${esc(x.area)}</div>
+      <div class="contactline">👤 <b>Contact:</b> ${esc(x.contact || 'Not specified in source')}</div>
+      <div class="line">📅 <b>${esc(x.day)}</b></div>
+      <div class="line">⏰ <b>${esc(x.time)}</b></div>
+      <div class="line">📍 ${esc(x.address)}</div>
+      ${note}
+      <div class="actions">
+        <a class="map" target="_blank" href="${esc(mapUrl)}">📍 Open Map</a>
+        ${online}
+        ${contact}
+        ${whatsapp}
+      </div>
+    </article>`
+  }).join(''):'<div class="empty">No matching centres.</div>'
+}
+function goHome(){
+  selectedArea='';selectedType='All';
+  document.getElementById('detail').style.display='none';
+  document.getElementById('home').style.display='block';
+  scrollTo(0,0);
+}
+areaCards();
+</script></body></html>
